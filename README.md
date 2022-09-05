@@ -1,2 +1,2 @@
-# Law-Office-Ninic-
+# Law-Office-Ninic
 Responsive web design
