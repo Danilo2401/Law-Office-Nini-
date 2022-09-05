@@ -1,0 +1,260 @@
+.heading-services{
+    text-align: center;
+    font-weight: 800;
+    color: #050e1b;
+    margin: 70px 0;
+    font-size: 65px;
+}
+
+#law-services{
+    margin: 80px 0;
+}
+
+#law-services .wrapper p{
+    color: #050e1b;
+    font-weight: 400;
+}
+
+#law-services .wrapper h2{
+    color: #050e1b;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+#law-services .wrapper h4{
+    color: #050e1b;
+    font-weight: 500;
+}
+
+#law-services .wrapper ul li{
+    color: #050e1b;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.img-services img{
+    max-width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 10px;
+}
+
+#law-services .wrapper .services-container article{
+    margin-bottom: 100px;
+}
+
+.text-services{
+    margin-left: 20px;
+}
+
+#header .wrapper ul li:nth-child(4){
+    margin-right: 0;
+}
+
+
+/*** Responsive design ***/
+
+
+
+@media screen and (min-width: 1280px){
+
+    h2{
+        font-size: 50px;
+    }
+    
+    h3{
+        font-size: 33px;
+    }
+
+    h4{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    
+    .wrapper{
+        width: 1200px;
+    }
+
+    #law-services .wrapper .services-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #law-services .wrapper .services-container article{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    #law-services .services-container .img-services img{
+        margin-right: 170px;
+    }    
+
+    #law-services .services-container .text-services{
+        display: block;
+        flex-basis: 65%;
+    }
+
+}
+
+
+@media screen and (max-width:1279px) and (min-width:992px) {
+
+    h2{
+        font-size: 48px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .heading-services{
+        font-size: 55px;
+    }   
+ 
+    .wrapper{
+        width:90%;
+    }
+
+    #law-services .wrapper .services-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #law-services .wrapper .services-container article{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    #law-services .services-container .img-services img{
+        margin: auto;
+    }    
+
+    #law-services .services-container .text-services{
+        display: block;
+        flex-basis: 60%;
+        margin-left: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width:991px) and (min-width:768px){
+
+    h2{
+        font-size: 43px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    #law-services .wrapper ul li{
+        font-size: 17px;
+    }
+
+    .heading-services{
+        font-size: 55px;
+    }
+
+    .wrapper{
+        width:90%;
+    }
+
+    #law-services .wrapper .services-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #law-services .wrapper .services-container article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #law-services .services-container .img-services {
+        margin: auto;
+        margin-bottom: 50px;
+    }    
+
+
+    #law-services .services-container h2,h4{
+        text-align: center;
+    }
+
+
+}
+
+
+@media screen and (max-width:767px) {
+
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    
+    #law-services .wrapper ul li{
+        font-size: 16px;
+    }
+
+    .heading-services{
+        font-size: 45px;
+    }
+
+    .wrapper{
+        width:85%;
+    }
+
+    #law-services .wrapper .services-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #law-services .wrapper .services-container article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #law-services .services-container .img-services {
+        margin: auto;
+        margin-bottom: 50px;
+    }    
+
+    #law-services .services-container h2,h4{
+        text-align: center;
+    }
+
+}

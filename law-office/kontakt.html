@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt stranica</title>
+    <link rel="icon" type="image/x-icon" href="logo-nav.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    
+<div id="header-top">
+    <div class="wrapper">
+    
+            <div class="info-header info-header1">
+                <p>Nikole Dobrovića 12,Novi Beograd 11070</p>
+                <p>ninicoffice@gmail.com</p>
+            </div>
+    
+            <div class="info-header hover-icon info-header2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+    
+    </div>
+</div>
+   
+<header id="header">
+    <div class="wrapper">
+        <div id="logo-header">
+           <img src="logo-nav.svg"  width="300px" alt="logo-nav">
+            <i class="hamburger fa-solid fa-bars"></i>
+        </div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="tim.html">Tim</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+    </div>
+</header><!--end header-->
+
+
+<div id="contact">
+    <div class="wrapper">
+
+        <div class="location-info">
+            <h2>Kontakt informacije</h2>
+            <div class="info1">
+                <h3><i class="icons-style fa-solid fa-location-dot"></i> Adresa</h3>
+                <p>Nikole Dobrovića 12,Novi Beograd 11070</p>
+                <p>Tel: 011 325 22 86</p>
+                <p>Mob: 065 562 41 50</p>
+                <p>Email: ninicoffice@gmail.com</p>
+            </div>
+
+            <div class="info2">
+                <h3><i class="icons-style fa-solid fa-clock"></i> Radno Vreme</h3>
+                <p>Ponedeljak - Petak: 10.00 AM - 6.00 PM</p>
+                <p>Subota: po dogovoru sa klijentom</p>
+                <p>Nedelja: Hitni slučajevi po dogovoru</p>
+            </div>
+
+            <div class="info3">
+                <h3>Društvene mreže</h3>
+                <div class="social-info">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+          
+        </div>   
+        
+            <form action="#" id="contact-form" method="POST">
+
+                <h2>Kontaktirajte nas</h2>
+
+                <label for="ImePrezime">Upišite ime i prezime:</label>
+                <input type="text" name="ImePrezime" id="ImePrezime" placeholder="Ime i prezime">
+
+                <label for="email">Upišite e-mail:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+                
+                <label for="brTel">Upišite broj telefona:</label>
+                <input type="text" name="brTel" id="brTel" placeholder="Broj telefona">
+
+                <label for="opis">Opišite nam slučaj ukratko:</label><br>
+                <textarea name="opis" id="opis" cols="72" rows="20"></textarea>
+
+                <input type="submit" name="btn-send"  id="btn-send" value="Pošalji">
+
+            </form>
+
+    </div>
+</div>
+
+<button id="scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<div id="map"></div>
+
+<footer class="footer-top">
+    <div class="wrapper">
+        <div class="footer-logo">
+            <img src="logo-nav.svg" height="400px" width="400px" alt="logo-nav"> 
+        </div>
+
+        <div class="footer-sidebar1">
+            <h3>Linkovi</h3>
+            <p><a href="#">Parlament</a></p>
+            <p><a href="#">Advokatska komora Srbije</a></p>
+            <p><a href="#">Advokatska komora Beograda</a></p>
+            <p><a href="#">Advokati Beograd</a></p>
+            <p><a href="#">Tarifa advokata</a></p>
+            <p><a href="#">Drugi osnovni sud Beograd</a></p>
+        </div>
+
+        <div class="footer-sidebar2">
+            <h3>Adresa</h3>
+            <p>Nikole Dobrovića 12,Novi Beograd 11070</p>
+            <p>011 325 22 86</p>
+            <p>065 562 41 50</p>
+            <p>ninicoffice@gmail.com</p>
+        </div>
+    </div>
+</footer><!--end footer-top -->
+
+
+<footer class="footer-bottom">
+    <div class="wrapper">
+        <p> &copy; 2022 All rights reserved</p>
+
+        <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>  
+</footer><!--end footer-bottom -->
+
+
+
+<script>
+$(document).ready(function(){
+    
+    $(".hamburger").click(function(){
+            
+        $("ul").toggle(350);
+    
+    });
+    
+    $(".aboutUs").click(function(){
+    
+        $('html, body').animate({
+            scrollTop: $(".intro").offset().top
+        }, 150);
+    
+    });
+    
+    
+    $(window).scroll(function(){
+    
+        let heightScroll = $(window).scrollTop();
+    
+            if (heightScroll > 1200) {
+                    $("#scrollTop").fadeIn();
+            }else{
+                    $("#scrollTop").fadeOut();
+            }
+    });
+    
+    $("#scrollTop").click(function(){
+    
+        $("html,body").animate({scrollTop:0},200);
+    
+    });
+
+    
+    var map = L.map('map').setView([44.817359, 20.388399], 13);
+
+    var marker = L.marker([44.817359, 20.388399]).addTo(map);
+
+    L.tileLayer('https://a.tile.openstreetmap.de/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    
+
+});
+</script>
+    
+    
+</body>
+</html>
